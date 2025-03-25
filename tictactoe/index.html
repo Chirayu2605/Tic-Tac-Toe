@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC-TAC-TOE</title>
+    <style>
+/* General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #1e1e1e, #2c2c2c); /* Dark background */
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Header Section */
+#head {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Player Choice Section */
+#player_choice {
+    margin-top: 40px;
+}
+
+/* Button Styling */
+button {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 12px 24px;
+    margin: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Button: Play with AI */
+.play_AI {
+    background: #e74c3c;
+    color: white;
+}
+
+.play_AI:hover {
+    background: #c0392b;
+    transform: scale(1.1);
+}
+
+/* Button: 2 Player Mode */
+.play_self {
+    background: #8e44ad;
+    color: white;
+}
+
+.play_self:hover {
+    background: #6c3483;
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <section id="head">
+        <h1>WELCOME TO TIC-TAC-TOE</h1>
+    </section>
+    <section id="player_choice">
+        <br>
+        <br>
+        <button class="play_AI" onclick="link()">PLAY WITH AI</button>
+        <br>
+        <br>
+        <a href="game.html" target="_self"><button class="play_self" onclick="">PLAY IN 2 PLAYER MODE</button></a>
+    </section>
+    <script>
+       function link(){
+        console.log("hello")
+       } 
+    </script>
+</body>
+</html>
